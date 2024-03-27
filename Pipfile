@@ -1,0 +1,36 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+Babel = "*"
+Django = ">=3.2.24,<3.3"
+GitPython = ">=3.1.41"
+PyYAML = "*"
+beautifulsoup4 = "*"
+certifi = ">=2023.7.22"  # Ensure dependency is secure
+colorlog = "*"
+dealer = "*"
+gitpython = ">=3.1.37"  # Ensure dependency is secure
+lxml = "*"  # Used for RDF/XML processing and by beautifulsoup4
+polib = "*"
+python-dateutil = "*"
+rdflib = "*"
+transifex-python = "*"
+urllib3 = ">=2.0.7"  # Ensure dependency is secure
+whitenoise = "*"
+
+[dev-packages]
+black = "*"
+coverage = "*"
+django-debug-toolbar = "*"
+factory-boy = "*"
+flake8 = "*"
+isort = "*"
+#link-checker = {file = "https://github.com/creativecommons/cc-link-checker/archive/v2020.09.1.zip"}
+pre-commit = "*"
+tblib = "*"  # For use by coverage (with --parallel)
+
+[requires]
+python_version = "3.9"

@@ -1,0 +1,47 @@
+# Please reference the following when adding new entries to minimize the delta
+# between them and this file:
+# - https://github.com/github/gitignore/blob/master/Python.gitignore
+
+# Byte-compiled / optimized / DLL files
+*$py.class
+*.py[cod]
+.cache/
+__pycache__/
+
+# Distribution / packaging
+build/
+
+# Unit test / coverage reports
+.coverage*
+
+# Django development
+*/settings/local.py
+
+# Environments
+.local
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Editor
+*.sw[po]
+*~
+
+# Pyenv
+.python-version
+
+# IDE ignores
+.vscode
+
+# Container files
+.bash_history
+.ssh
+
+# Temporary files, includes:
+#  tmp/public (Django)
+#  db.sqlite3 (Django)
+tmp/
+db.sqlite3

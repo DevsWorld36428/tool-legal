@@ -1,0 +1,23 @@
+{% load i18n %}
+<li>
+  <span class="locale icon-attach fa-globe">
+  <select id="languages-dropdown">
+    {% block lang-options %}
+    <option disabled>{% trans "Languages available" %}</option>
+
+    {% for option in languages_and_links %}
+      <option
+        id="option-{{ option.cc_language_code }}"
+        {% if option.selected %}selected{% endif %}
+        value="{{ option.cc_language_code }}"
+        data-link="{{ option.link }}"
+      >
+        {{ option.name_local }}
+      </option>
+    {% endfor %}
+    {% endblock lang-options %}
+  </select>
+  </span>
+</li>
+<script src="/cc-legal-tools/language-dropdown.js"></script>
+{# vim: ft=jinja.html ts=2 sw=2 sts=2 sr et #}

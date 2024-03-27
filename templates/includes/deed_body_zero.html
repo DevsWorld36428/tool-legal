@@ -1,0 +1,22 @@
+{% load i18n %}
+<div id="deed-body">
+
+  {# NO COPYRIGHT #}
+  <h2>{% blocktrans trimmed %}No Copyright{% endblocktrans %}</h2>
+  <ol>
+    <li class="cc-zero">{% blocktrans trimmed %}The person who associated a work with this deed has <b>dedicated</b> the work to the public domain by waiving all of his or her rights to the work worldwide under copyright law, including all related and neighboring rights, to the extent allowed by law.{% endblocktrans %}</li>
+    <li>{% blocktrans trimmed %}You can copy, modify, distribute and perform the work, even for commercial purposes, all without asking permission. See <b>Other Information</b> below.{% endblocktrans %}</li>
+  </ol>
+
+  {# OTHER INFORMATION #}
+
+  <h2>{% blocktrans trimmed %}Other Information{% endblocktrans %}</h2>
+  <ol>
+    <li>{% blocktrans trimmed %}In no way are the patent or trademark rights of any person affected by CC0, nor are the rights that other persons may have in the work or in how the work is used, such as <a href="#ref-publicity-rights" id="src-publicity-rights">publicity or privacy</a> rights.{% endblocktrans %}
+    </li>
+    <li>{% blocktrans trimmed %}Unless expressly stated otherwise, the person who associated a work with this deed makes no warranties about the work, and disclaims liability for all uses of the work, to the fullest extent permitted by applicable law.{% endblocktrans %}</li>
+    <li>{% blocktrans trimmed %}When using or citing the work, you should not imply <a href="#ref-endorsement" id="src-endorsement">endorsement</a> by the author or the affirmer.{% endblocktrans %}</li>
+  </ol>
+
+</div>{# end deed-body #}
+{# vim: ft=jinja.html ts=2 sw=2 sts=2 sr et #}
